@@ -10,6 +10,8 @@ import Navbar from './components/shared/Navbar';
 import ContactShow from './components/contacts/ContactShow';
 import Blogs from './components/blogs/Blogs';
 import BlogShow from './components/blogs/BlogShow';
+import PostShow from './components/posts/PostShow';
+
 
 const App = () => (
   <>
@@ -25,6 +27,7 @@ const App = () => (
       <Route exact path='/blogs' element={<Blogs />} />
       <Route exact path='/contacts/:contactId' element={<ContactShow />} />      
       <Route exact path='/blogs/:blogId' element={<BlogShow />} />
+      <Route exact path='/blogs/:blogId/posts/:postId' element={<PostShow />} />
       <Route path='*' element={<NoMatch />} />
     </Routes>
   </>
