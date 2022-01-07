@@ -24,6 +24,9 @@ const MainNavbar = ({}) => {
           <Navbar.Brand href="/contacts">
               Contact
           </Navbar.Brand>
+          <Navbar.Brand href="/blogs">
+              Blogs
+          </Navbar.Brand>
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
             <Navbar.Text>

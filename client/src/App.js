@@ -8,6 +8,8 @@ import NoMatch from './components/shared/NoMatch';
 import Contacts from './components/contacts/Contacts';
 import Navbar from './components/shared/Navbar';
 import ContactShow from './components/contacts/ContactShow';
+import Blogs from './components/blogs/Blogs';
+import BlogShow from './components/blogs/BlogShow';
 
 const App = () => (
   <>
@@ -19,8 +21,10 @@ const App = () => (
       <Route exact path='/skills' element={<Skills />} />      
       <Route exact path='/portfolio' element={<Portfolio />} />      
       <Route exact path='/work' element={<Work />} />
-      <Route exact path='/contacts' element={<Contacts />} />
-      <Route exact path='/contacts/:contactId' element={<ContactShow />} />
+      <Route exact path='/contacts' element={<Contacts />} />      
+      <Route exact path='/blogs' element={<Blogs />} />
+      <Route exact path='/contacts/:contactId' element={<ContactShow />} />      
+      <Route exact path='/blogs/:blogId' element={<BlogShow />} />
       <Route path='*' element={<NoMatch />} />
     </Routes>
   </>
